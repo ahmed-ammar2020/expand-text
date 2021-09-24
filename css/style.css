@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:#333;
+}
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50% , -50%);
+    display:flex;
+}
+.content span{
+    font-size:7em;
+    color:rgb(42, 245, 167);
+}
+span:nth-child(even){
+    color:#fff;
+    display:inline-block;
+    letter-spacing:-1em;
+    overflow:hidden;
+    transition:letter-spacing 1s ease-in-out;
+}
+.content:hover span:nth-child(even){
+    letter-spacing:0;
+}
